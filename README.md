@@ -1,6 +1,19 @@
-# Sobre o projeto
+#  Projeto Studio De Beleza
 
-O projeto consiste em um sistema para um salão de beleza (Fictício), na qual é possível efetuar diversas funções, são elas:
+> O projeto consiste em um sistema para um salão de beleza (Fictício)
+
+
+## Sumário
+
+- [Funcionalidades](#funcionalidades)
+- [Tecnologias Utilizadas](#tecnologias-utilizadas)
+- [Como Rodar](#como-rodar)
+  - [Pré-requisitos](#pré-requisitos)
+- [Como Usar](#como-usar)
+- [Como Contribuir](#como-contribuir)
+
+
+## Funcionalidades
 
 - Funcionários
   - Cadastrar funcionários
@@ -29,12 +42,23 @@ O projeto consiste em um sistema para um salão de beleza (Fictício), na qual �
 - Sistema de pedidos
 - Sistema de fluxo de caixa
 
-## Tecnologias utilizadas
+## Tecnologias Utilizadas
 
-- Csharp ( Windows Forms )
+- Csharp
+    - Windows Forms
 - Mysql
 
-## Como executar o projeto
+## Como Rodar
+### Pré-requisitos
+
+Antes de executar o projeto, certifique-se de ter os seguintes requisitos instalados:
+- Visual Studio 2022 ou superior
+- Mysql Workbench
+- Servidor Mysql (Xampp, Wamp, etc)
+- .NET Framework 4.7.2 ou superior
+
+
+## Como rodar
 
 - Clone ou baixe o projeto o projeto
 - Abra a solução no Visual Studio ( solução se encontra na tela )
@@ -48,3 +72,7 @@ O projeto consiste em um sistema para um salão de beleza (Fictício), na qual �
 - Abra o arquivo "connection.cs"
 - Altere a parte da senha para a senha do seu banco de dados
 - Rode o projeto
+
+## Como Contribuir
+
+- Entre em contato comigo pelo [LinkedIn](https://www.linkedin.com/in/matheus-rodrigues-mrj/)
