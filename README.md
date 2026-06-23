@@ -1,59 +1,93 @@
-# Studio De Beleza
+# Studio de Beleza
 
-- 🔁 Last updated: 06/10/2025
-- 📈 Progress: Completed
-- 🚀 Deploy: Not in pro
+[![C#](https://img.shields.io/badge/C%23-239120?style=for-the-badge&logo=c-sharp&logoColor=white)](https://docs.microsoft.com/en-us/dotnet/csharp/)
+[![MySQL](https://img.shields.io/badge/MySQL-4479A1?style=for-the-badge&logo=mysql&logoColor=white)](https://www.mysql.com/)
 
+## Table of Contents
 
-## 📋 Summary
+- [Context](#-context)
+- [Software features](#-software-features)
+- [Technologies and tools](#-technologies-and-tools)
+- [Architecture](#-architecture)
+- [Repository structure](#-repository-structure)
+- [Requirements](#-requirements)
+- [How to run](#-how-to-run)
+- [Author](#-author)
 
-- [📖 About project](#about-project)
-- [🏗️ Architecture](#architecture)
-- [🛠️ Technologies used](#technologies-used)
-- [📋 Requirements](#requirements)
-- [🚀 How to run](#how-to-run)
-- [👨‍💻 Authors](#authors)
+# 📌 Context 
 
-## 📖 About Project <a id="about-project"></a>
+This project consists of a desktop management system designed for a fictitious beauty salon (Studio de Beleza). It allows managing clients, employees, inventory, payroll, cash flow, and schedules.
 
-The project consists of a system for a beauty salon (Fictitious)
+## 🚀 Software features
 
-## 🏗️ Architecture <a id="architecture"></a>
+- **Employee Management:** Manage employees and log attendance.
+- **Client & Provider Management:** Register and edit clients and suppliers.
+- **Inventory Control:** Monitor product stock levels.
+- **Financial Flow:** Track cash flow, expenses, payroll, and orders.
+- **Database Connection:** Connected to a MySQL database to persist all data.
 
-Without architecture defined.
+## 🛠️ Technologies and tools
 
+- C# (.NET Framework)
+- Windows Forms (UI)
+- MySQL (Database)
 
-## 🛠️ Technologies used <a id="technologies-used"></a>
+## 📋 Architecture
 
-- Csharp
-  - Windows Forms
-- Mysql
+No specific architecture defined.
 
+## 📂 Repository structure
 
-## 📋 Requirements <a id="requirements"></a>
+```text
+- 📂 desktop-projeto-integrador2018/
+  - 📂 ProjetoADM/
+    - 📄 ProjetoADM.sln (Solution file)
+    - 📂 ProjetoADM/ (Main project folder)
+      - 📄 App.config
+      - 📄 Program.cs
+      - 📄 ProjetoADM.csproj
+      - 📂 Codigos/
+        - 📂 BASE/
+          - 📄 Connection.cs (Database connection settings)
+          - 📄 Database.cs (Helper database class)
+        - 📄 Script do banco.txt (Database schema script)
+        - 📄 script de inserts.txt (Initial data scripts)
+      - 📂 Telas/ (User interface forms)
+```
+
+## 📦 Requirements
 
 - Visual Studio 2022 or higher
-- Mysql Workbench
-- Mysql Server (Xampp, Wamp, etc)
+- MySQL Workbench
+- MySQL Server (XAMPP, WampServer, or local MySQL instance)
 - .NET Framework 4.7.2 or higher
 
+## ⚙️ How to run
 
-## 🚀 How to run <a id="how-to-run"></a>
+### 1. Clone the Repository
+Clone the repository to your local machine:
+```bash
+git clone https://github.com/MatheusRodri/desktop-projeto-integrador2018.git
+cd desktop-projeto-integrador2018
+```
 
-1. Clone or download the project
-2. Open the solution in Visual Studio (solution is located on the screen)
-3. Go to the "códigos" folder
-4. Go to the "script do banco" file
-5. Copy and paste it into Mysql Workbench
-6. Run the code in Mysql Workbench
-7. In the project
-8. Go to the "códigos" folder
-9. Go to the "BASE" folder
-10. Open the "connection.cs" file
-11. Change the password part to your database password
-12. Run the project
+### 2. Database Configuration
+1. Ensure your local MySQL server is running.
+2. Open **MySQL Workbench**.
+3. Locate the SQL script file: `ProjetoADM/ProjetoADM/Codigos/Script do banco.txt`.
+4. Copy and execute its contents in MySQL Workbench to create the database tables.
+5. (Optional) Run the inserts script from `ProjetoADM/ProjetoADM/Codigos/script de inserts.txt` to seed the database.
 
+### 3. Connection Configuration
+1. Open the solution file `ProjetoADM/ProjetoADM.sln` in **Visual Studio**.
+2. Navigate to `ProjetoADM/ProjetoADM/Codigos/BASE/Connection.cs` inside the Solution Explorer.
+3. Modify the connection string credentials (specifically `password`) to match your local MySQL configuration.
 
-## 👨‍💻 Author <a id="authors"></a>
+### 4. Build and Run
+1. Restore NuGet packages if necessary.
+2. Build and run the project from Visual Studio by pressing **F5** or clicking the **Start** button.
 
-### [Matheus Rodrigues](https://www.linkedin.com/in/matheus-rodrigues-mrj/)
+## 👤 Author
+
+Matheus Rodrigues 
+[LinkedIn](https://linkedin.com/in/matheus-rodrigues-mrj) [GitHub](https://github.com/MatheusRodri)
